@@ -32,7 +32,6 @@ const hasSeededProgress = () => {
 };
 
 export default function App() {
-  // Load saved state or default
   const [profile, setProfile] = useState<PlayerProfile>(() => {
     const saved = localStorage.getItem(`${STORAGE_KEY}_profile`);
     if (saved) {
