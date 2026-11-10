@@ -1,0 +1,6 @@
+{
+  "name": "Petualangan Geometri - Peta Dunia Bentuk",
+  "description": "Game edukasi petualangan geometri interaktif untuk anak-anak dengan peta dunia bentuk, misi harian, kuis interaktif, koleksi bentuk, dan eksplorasi level seru.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

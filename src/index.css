@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Fredoka', 'Nunito', cursive, sans-serif;
+  }
+}
+
+/* Custom animations for the playful geometry world */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+@keyframes floatHero {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.03);
+  }
+}
+
+@keyframes driftCloud {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(110%);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.6), 0 0 30px rgba(59, 130, 246, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.9), 0 0 45px rgba(59, 130, 246, 0.7);
+    transform: scale(1.06);
+  }
+}
+
+@keyframes starSpin {
+  0% {
+    transform: scale(0) rotate(-180deg);
+  }
+  60% {
+    transform: scale(1.2) rotate(15deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-float-hero {
+  animation: floatHero 2.5s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+.animate-star-pop {
+  animation: starSpin 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Custom scrollbar for game map and modals */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(224, 242, 254, 0.5);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38bdf8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
